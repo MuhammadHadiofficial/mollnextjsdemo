@@ -9,7 +9,7 @@ import GalleryDefault from "~/components/partials/product/gallery/gallery-defaul
 import DetailOne from "~/components/partials/product/details/detail-one";
 import InfoOne from "~/components/partials/product/info-tabs/info-one";
 import RelatedProductsOne from "~/components/partials/product/related/related-one";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function ProductDefault(props) {
   const slug = useRouter().query.slug;
