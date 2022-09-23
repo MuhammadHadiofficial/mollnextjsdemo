@@ -23,7 +23,7 @@ function ShopGrid(props) {
             "Content-Type": "application/json",
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_ACCESS_TOKEN}`,
           };
-          let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v1/gatsby/items`;
+          let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v1/gatsby/itemsnext`;
           const res = await fetch(url, {
             method: "GET",
             // mode: 'cors',

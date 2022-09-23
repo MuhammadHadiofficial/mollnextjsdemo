@@ -85,7 +85,7 @@ export const getServerSideProps = async (props) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_ACCESS_TOKEN}`,
       };
-      let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v1/gatsby/items/${props.params.slug}`;
+      let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/v1/gatsby/itemsnext/${props.params.slug}`;
     const res=await  fetch(url, {
         method: "GET",
         headers,
